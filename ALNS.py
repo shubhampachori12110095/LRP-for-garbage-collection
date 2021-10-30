@@ -5,8 +5,7 @@ Created on Thu Oct 14 20:46:36 2021
 @author: hyx
 """
 
-#from netGraph import road
-#from networkx.algorithms.link_prediction import _community
+
 from net import simpleGraph
 import osmnx as nx
 import networkx as nx
@@ -16,28 +15,7 @@ import math
 import copy
 import matplotlib.pyplot as plt
 from gurobipy import *
-'''
-def nodeGeneration():  
-    city = road('天府广场, china',3000)
-    
-    city.addCollectPoi(1,30.66411,104.07250,429,279,357,368)
-    city.addCollectPoi(2,30.67177,104.07522,301,227,270,526)
-    city.addCollectPoi(3,30.64359,104.04821,344,270,357,274)
-    city.addCollectPoi(4,30.66754,104.04821,318,229,207,531)
-    city.addCollectPoi(5,30.67580,104.07072,298,271,215,497)
-    city.addCollectPoi(6,30.6678,104.0867,317,571,403,555)
-    city.addCollectPoi(7,30.66205,104.08507,269,571,533,418)
-    city.addCollectPoi(8,30.64757,104.04541,286,462,570,345)
-    city.addTransPoi(101,30.64495,104.04966)
-    city.addTransPoi(102,30.66431,104.04339)
-    city.addTransPoi(103,30.67494,104.08902)
-    city.addGarPoi(1,30.66912,104.03749)
-    city.addGarPoi(2,30.63531,104.07180)
-    city.addGarPoi(3,30.63976,104.09992)
-    city.addGarPoi(4,30.6838,104.0762)
-    city.shortestRoute()
-    return city
-'''
+
 
 def nodeGeneration():
     city = simpleGraph()
